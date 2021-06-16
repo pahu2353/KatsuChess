@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KatsuChess - Play</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0"/>
+    <meta name="description" content="Play chess against the open-source chess engine Stockfish!"/>
+  <meta name="theme-color" content="#deaf9d"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="preload" href="node_modules1/@fortawesome/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+     <link rel="preload" href="./node_modules1/chess-console-stockfish/assets/styles/screen.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <script src="node_modules1/jquery/dist/jquery.min.js" defer></script>
+<script src="node_modules1/bootstrap/dist/js/bootstrap.js" defer></script>
+ <script src="script.js" type="module"></script>
+  
+    
+</head>
+<body>
+<div class="container-fluid">
+    <h1 onclick="window.location.href='index.html'" id="katsu">KatsuChess</h1>
+	<h2 id="slogan">チェスで勝つ、人生で勝つ</h2>
+    <div id="console-container" class="mb-3"></div>
+    <form>
+        <div class="input-group mb-4">
+            <label for="fenInput" class="sr-only">FEN</label>
+            <div class="input-group-prepend">
+                <button id="fenButton" class="btn btn-outline-primary" type="button">Load FEN</button>
+            </div>
+            <input id="fenInput" class="form-control" placeholder="Enter FEN"
+                   value="8/4b3/4P3/1k4P1/8/ppK5/8/4R3 b - - 1 45"/>
+        </div>
+    </form>
+    <form>
+        <div class="input-group mb-4">
+            <label for="pgnInput" class="sr-only">PGN</label>
+            <div class="input-group-prepend">
+                <button id="pgnButton" class="btn btn-outline-primary" type="button">Load PGN</button>
+            </div>
+            <input id="pgnInput" class="form-control" placeholder="Enter PGN"
+                   value=" 1. e4 e5 2. Nf3 d6 3. d4 Bg4 4. dxe5 Bxf3 5. Qxf3 dxe5 6. Bc4 Nf6 7. Qb3 Qe7 8. Nc3 c6 9. Bg5 b5 10. Nxb5 cxb5 11. Bxb5+ Nbd7 12. O-O-O Rd8 13. Rxd7 Rxd7 14. Rd1 Qe6 15. Bxd7+ Nxd7 16. Qb8+ Nxb8 17.Rd8# 1-0"/>
+        </div>
+    </form>
+  
+</div>
+
+</body>
+</html>
